@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+h1 h2 h3 h4 h5 h6{
+    margin: 0;
+}
+.intro {   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     /* 
+        flex - превращает элемент в flex-container
+        justify-content - свойство устанавливающее правило расположения дочерних
+        элементов по x
+            * space-between - все элементы распологаются равномерно по ширине,
+            а крайние прилегают по краям.
+            * space-around - все элементы распологаются равномерно по ширине,
+            а крайние имеют растояние от краёв равное половине растояния
+            других элементов друг от друга.
+            * center - все элементы стремятся к центру.
+            * left, right, end, start, baseline
+    */
+    padding: 59px 0 ;    .intro > div 
+}
+.intro > div{
+    width: 47%;
+}
+.container {
+    max-width: 1157px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+.intro-title {
+    font-size: 48px;
+
+    font-weight: 700;
+    color: #000000;
+
+}
+.intro-title > span{
+    color: #EE4248;
+}
+.intro-text {
+    font-size: 20px;
+    color: #000000;
+}
+.intro-btn {
+    display: inline-block;
+    padding: 12px 32px;
+    background-color: #EE4248;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 20px;
+}
