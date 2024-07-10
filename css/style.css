@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    font-family: 'Roboto';
 }
 a{
     text-decoration: none;
@@ -12,7 +13,7 @@ html {
 *::after {
     box-sizing: inherit;
 }
-h1 h2 h3 h4 h5 h6{
+h1 h2 h3 h4 h5 h6, p{
     margin: 0;
 }
 .intro {   
@@ -44,15 +45,16 @@ h1 h2 h3 h4 h5 h6{
 }
 .intro-title {
     font-size: 48px;
-
     font-weight: 700;
     color: #000000;
+    margin: 0;
 
 }
-.intro-title > span{
+.intro-title > span, .info-title > span, .info-text > span{
     color: #EE4248;
 }
 .intro-text {
+    margin: 24px 0;
     font-size: 20px;
     color: #000000;
 }
@@ -63,4 +65,32 @@ h1 h2 h3 h4 h5 h6{
     color: #fff;
     border-radius: 4px;
     font-size: 20px;
+}
+.info {
+    padding:57px 0 63px 0;
+    background-color: #F6F6F6;
+}
+.info-title {
+    color: #1F2E35;
+    font-size: 32px;
+    margin-top: 24px;
+.container {
+
+}
+}
+.info-article {
+    font-size: 18px;
+    color: #30444E;
+    
+}
+.info-text:nth-child(2) {
+    margin-top: 18px;
+}
+.info-wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.info-content {
+    width: 47%;
 }
