@@ -13,7 +13,7 @@ html {
 *::after {
     box-sizing: inherit;
 }
-h1 h2 h3 h4 h5 h6, p{
+h1, h2, h3, h4, h5, h6, p{
     margin: 0;
 }
 .intro {   
@@ -94,10 +94,6 @@ h1 h2 h3 h4 h5 h6, p{
 .info-content {
     width: 47%;
 }
-.pd{
-    height: 363px;
-    width: 360px;
-}
 .products {
     max-width: 1126px;
     width: 100%;
@@ -106,14 +102,13 @@ h1 h2 h3 h4 h5 h6, p{
 }
 .product-wrapper {
     display: flex;
-    justify-content: center;
-    align-items: end;
-    position: relative;
+    align-items: center;
+    justify-content: space-between;
     margin: 0 auto;
     
 }
 .pd {
-    margin-left: 9px;
+    width: 30%;
 }
 .products-btn {
     display: inline-block;
@@ -131,8 +126,73 @@ h1 h2 h3 h4 h5 h6, p{
 .pp{
     font-size: 18px;
     width: 93%;
+    line-height: 150%;
 }
 .pph{
     margin: 20px 418px 17px 418px ;
     font-size: 32px;
 }
+
+
+.logo-left :nth-child(3){
+    color: #FEBA08;
+    font-size: 48px;
+}
+.logo-left :nth-child(1){
+    color: #85171A;
+    font-size: 48px;
+}
+.logo-left :nth-child(2){
+    color: #DC2025;
+    font-size: 48px;
+}
+.logo-right > span{
+    display: block;
+    font-size: 10px;
+    font-weight: 500;
+}
+.logo-left > span{
+    font-weight: 900;
+}
+.logo{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.footer-info-text{
+    font-weight: 300;
+    line-height: 149%;
+
+}
+.footer-contacts-title {
+    font-weight: bold;
+    font-size: 24px;
+}
+.footer-info{
+    display: flex;
+    align-items: end;
+    gap: 47px;
+}
+.footer-rigts{
+    margin-top: 13px;
+    text-align: center;
+    background-color: #EE4248;
+    color: #fff;
+    font-size: 18px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+}
+footer{
+    margin: 0 auto;
+}
+.footer-info-title{
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+.footer-contacts-title{
+    margin-bottom: 15px;
+}
+/* gap - создаёт разрыв между flex элементами.
+   line-height - изменяет растояние между строками.100% или 1 - стандартное растояние
+   text-align - изменяет положение текста по x.
+ */
