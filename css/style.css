@@ -195,4 +195,86 @@ footer{
 /* gap - создаёт разрыв между flex элементами.
    line-height - изменяет растояние между строками.100% или 1 - стандартное растояние
    text-align - изменяет положение текста по x.
+   display none - убирпает элемент
+   box-shadow - создёт тени     x y blur rgba
+   rgba -
  */
+ .header {
+    width: 100%;
+    box-shadow: 0px 1px 4px rgba(0 ,0 ,0, 0.25);
+ }
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    gap: 15px;
+    color: rgba(31, 46, 53, 80);
+}
+.header-content-item {
+    padding: 10px 15px;
+    transition-duration: 300ms;
+    border-radius: 3px;
+    /* transition-duration - устанавливает плавность анимации 
+    hover - псевдокласс добовляющий эффект при наведенмм на него*/
+}
+.header-content-item:hover{
+    background-color: #EE4248;
+    color: #fff;
+}
+.header-content-item.dropdown{
+    border-radius:3px 3px 0 0;
+}
+.dropdown-inner {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.dropdown-inner > svg, .header-icons > svg{
+    fill:#1F2E35;
+    fill-opacity: 80;
+}
+.dropdown:hover svg{
+    fill:#fff;
+    fill-opacity: 1;
+}
+.header-icons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.header-icons > svg:first-child:hover, .header-icons > svg:nth-child(2):hover, .header-icons > svg:nth-last-child():hover{
+    fill: #EE4248;
+    fill-opacity: 1;
+}
+.dropdown{
+    position: relative;
+}
+.dropdown-content{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 5;
+    opacity: 0;
+    transition-duration: 200ms;
+}
+.dropdown-item{
+    width: 110%;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #EE4248;
+    transition-duration: 200ms;
+    font-size: 18px;
+}
+.dropdown-item:nth-last-child(){
+    border-radius: 0 0 3px 3px;
+}
+.dropdown-item:first-child{
+    border-radius: 0 3px 0 0;
+}
+.dropdown:hover .dropdown-content{
+    opacity: 1;
+}
